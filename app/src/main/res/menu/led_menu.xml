@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/Menu_EditLED" android:id="@+id/Menu_Edit_LED"/>
+    <item android:title="@string/Btn_play" android:id="@+id/Menu_play_LED"/>
+    <item android:title="@string/Menu_deleteLED" android:id="@+id/Menu_delete_LED"/>
+    <item android:title="@string/Menu_upLED" android:id="@+id/Menu_UPLED"/>
+    <item android:title="@string/Menu_downLED" android:id="@+id/Menu_DOLED"/>
+
+</menu>

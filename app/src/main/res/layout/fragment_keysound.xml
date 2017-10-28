@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cus="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent" android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Layout_KeyLeft"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/Layout_Btns"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Sound_LoadSounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/KeySound_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Text_current"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/List_sounds"
+            android:layout_weight="1"></ListView>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Check_delete"
+            android:checked="false"
+            android:id="@+id/check_delete"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioG_mode"
+            android:checkedButton="@+id/Radio_edit_BTN">
+
+            <RadioButton
+                android:id="@+id/Radio_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KeySound_test" />
+
+            <RadioButton
+                android:id="@+id/Radio_edit_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KeySound_edit" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_Btns"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/First">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 1"
+                android:tag="1 1"
+                android:id="@+id/_1"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 2"
+                android:tag="1 2"
+                android:id="@+id/_2"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 3"
+                android:tag="1 3"
+                android:id="@+id/_3"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 4"
+                android:tag="1 4"
+                android:id="@+id/_4"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 5"
+                android:tag="1 5"
+                android:id="@+id/_5"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 6"
+                android:tag="1 6"
+                android:id="@+id/_6"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 7"
+                android:tag="1 7"
+                android:id="@+id/_7"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="1 8"
+                android:tag="1 8"
+                android:id="@+id/_8"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Second">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 1"
+                android:tag="2 1"
+                android:id="@+id/_9"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 2"
+                android:tag="2 2"
+                android:id="@+id/_10"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 3"
+                android:tag="2 3"
+                android:id="@+id/_11"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 4"
+                android:tag="2 4"
+                android:id="@+id/_12"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 5"
+                android:tag="2 5"
+                android:id="@+id/_13"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 6"
+                android:tag="2 6"
+                android:id="@+id/_14"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 7"
+                android:tag="2 7"
+                android:id="@+id/_15"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="2 8"
+                android:tag="2 8"
+                android:id="@+id/_16"
+                android:layout_weight="1"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Third">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 1"
+                android:tag="3 1"
+                android:id="@+id/_17"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 2"
+                android:tag="3 2"
+                android:id="@+id/_18"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 3"
+                android:tag="3 3"
+                android:id="@+id/_19"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 4"
+                android:tag="3 4"
+                android:id="@+id/_20"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 5"
+                android:tag="3 5"
+                android:id="@+id/_21"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 6"
+                android:tag="3 6"
+                android:id="@+id/_22"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 7"
+                android:tag="3 7"
+                android:id="@+id/_23"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="3 8"
+                android:tag="3 8"
+                android:id="@+id/_24"
+                android:layout_weight="1"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Forth">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 1"
+                android:tag="4 1"
+                android:id="@+id/_25"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 2"
+                android:tag="4 2"
+                android:id="@+id/_26"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 3"
+                android:tag="4 3"
+                android:id="@+id/_27"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 4"
+                android:tag="4 4"
+                android:id="@+id/_28"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 5"
+                android:tag="4 5"
+                android:id="@+id/_29"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 6"
+                android:tag="4 6"
+                android:id="@+id/_30"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 7"
+                android:tag="4 7"
+                android:id="@+id/_31"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="4 8"
+                android:tag="4 8"
+                android:id="@+id/_32"
+                android:layout_weight="1"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Five">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 1"
+                android:tag="5 1"
+                android:id="@+id/_33"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 2"
+                android:tag="5 2"
+                android:id="@+id/_34"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 3"
+                android:tag="5 3"
+                android:id="@+id/_35"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 4"
+                android:tag="5 4"
+                android:id="@+id/_36"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 5"
+                android:tag="5 5"
+                android:id="@+id/_37"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 6"
+                android:tag="5 6"
+                android:id="@+id/_38"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 7"
+                android:tag="5 7"
+                android:id="@+id/_39"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="5 8"
+                android:tag="5 8"
+                android:id="@+id/_40"
+                android:layout_weight="1"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Six">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 1"
+                android:tag="6 1"
+                android:id="@+id/_41"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 2"
+                android:tag="6 2"
+                android:id="@+id/_42"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 3"
+                android:tag="6 3"
+                android:id="@+id/_43"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 4"
+                android:tag="6 4"
+                android:id="@+id/_44"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 5"
+                android:tag="6 5"
+                android:id="@+id/_45"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 6"
+                android:tag="6 6"
+                android:id="@+id/_46"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 7"
+                android:tag="6 7"
+                android:id="@+id/_47"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="6 8"
+                android:tag="6 8"
+                android:id="@+id/_48"
+                android:layout_weight="1"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Seven">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 1"
+                android:tag="7 1"
+                android:id="@+id/_49"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 2"
+                android:tag="7 2"
+                android:id="@+id/_50"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 3"
+                android:tag="7 3"
+                android:id="@+id/_51"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 4"
+                android:tag="7 4"
+                android:id="@+id/_52"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 5"
+                android:tag="7 5"
+                android:id="@+id/_53"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 6"
+                android:tag="7 6"
+                android:id="@+id/_54"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 7"
+                android:tag="7 7"
+                android:id="@+id/_55"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="7 8"
+                android:tag="7 8"
+                android:id="@+id/_56"
+                android:layout_weight="1"/></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/Eight">
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 1"
+                android:tag="8 1"
+                android:id="@+id/_57"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 2"
+                android:tag="8 2"
+                android:id="@+id/_58"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 3"
+                android:tag="8 3"
+                android:id="@+id/_59"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 4"
+                android:tag="8 4"
+                android:id="@+id/_60"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 5"
+                android:tag="8 5"
+                android:id="@+id/_61"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 6"
+                android:tag="8 6"
+                android:id="@+id/_62"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 7"
+                android:tag="8 7"
+                android:id="@+id/_63"
+                android:layout_weight="1"/>
+
+            <unitor.uni.k1a2.unitor.PlayButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                cus:name="8 8"
+                android:tag="8 8"
+                android:id="@+id/_64"
+                android:layout_weight="1"/></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_KeyRight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/Layout_Btns"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/KeySound_Right">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/RadioG_chain">
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="keySound:"/>
+                android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/keysound_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/keysound_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mode_edit_black_18dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:id="@+id/keysound_switch"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Save"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/Keysound_save"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

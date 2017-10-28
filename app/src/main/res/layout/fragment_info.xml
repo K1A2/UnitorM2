@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Check_Square"
+            android:gravity="center_vertical"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/Check_Squ_true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="5">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:textSize="20dp"
+                android:id="@+id/Edit_Title"
+                android:singleLine="true"
+                android:hint="@string/Edit_title"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="20dp"
+                android:id="@+id/Edit_Producer"
+                android:hint="@string/Edit_producer"
+                android:layout_below="@+id/Edit_Title" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Edit_Chain"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="@string/Edit_chain"
+                android:layout_below="@+id/Edit_Producer" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/Btn_save"
+                android:text="@string/Save"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/Text_info"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Text_Con"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

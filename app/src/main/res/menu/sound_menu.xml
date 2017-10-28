@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/Popup_play"
+        android:id="@+id/sound_pop_Play"/>
+
+    <item android:title="@string/Popup_dekete"
+        android:id="@+id/sound_pop_Delete"/>
+
+</menu>
